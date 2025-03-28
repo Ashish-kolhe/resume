@@ -31,7 +31,7 @@ export default function PersonalInfoForm({ personalInfo, updatePersonalInfo }: P
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="space-y-2">
         <Label htmlFor="name">Full Name</Label>
-        <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="John Doe" />
+        <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" />
       </div>
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
@@ -41,12 +41,12 @@ export default function PersonalInfoForm({ personalInfo, updatePersonalInfo }: P
           type="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="john.doe@example.com"
+          placeholder="NameLess@someone.com"
         />
       </div>
       <div className="space-y-2">
         <Label htmlFor="phone">Phone</Label>
-        <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="(123) 456-7890" />
+        <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="92------72" />
       </div>
       <div className="space-y-2">
         <Label htmlFor="address">Address</Label>
@@ -55,7 +55,7 @@ export default function PersonalInfoForm({ personalInfo, updatePersonalInfo }: P
           name="address"
           value={formData.address}
           onChange={handleChange}
-          placeholder="123 Main St, City, State"
+          placeholder="House No, City, State"
         />
       </div>
       <div className="space-y-2">
